@@ -68,7 +68,7 @@ for node in wall.nodes.values():
 
 for element in list(wall.quads.values()):
     Zavg = (element.i_node.Z + element.j_node.Z + element.m_node.Z + element.n_node.Z)/4
-    #wall.add_quad_surface_pressure(element.name, q_soil_smooth(Zavg), case='soil')
+    wall.add_quad_surface_pressure(element.name, q_soil_smooth(Zavg), case='soil')
 
 wall.add_load_combo('soil', {'soil': 1})
 wall.merge_duplicate_nodes()
