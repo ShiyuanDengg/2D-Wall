@@ -84,7 +84,7 @@ wall.analyze(log=True, check_statics=True)
 from Pynite.Rendering import Renderer
 renderer = Renderer(wall)
 renderer.annotation_size = 0.2
-renderer.render_loads = True
+renderer.render_loads = False
 renderer.deformed_shape = True
 renderer.deformed_scale = 10
 renderer.color_map = 'Qy'
